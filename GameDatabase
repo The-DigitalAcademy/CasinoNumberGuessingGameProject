@@ -1,0 +1,45 @@
+Drop  TABLE if EXISTS LoginTable CASCADE;
+CREATE TABLE LoginTable (
+	id serial PRIMARY KEY,
+	username VARCHAR ( 50 ) UNIQUE NOT NULL,
+	pwd VARCHAR ( 50 ) NOT NULL
+);
+Drop TABLE if EXISTS User_Details CASCADE;
+
+CREATE TABLE User_Details(
+  id INT NOT NULL,
+  FName VARCHAR(50) NOT NULL,
+  LName VARCHAR(50) NOT NULL,
+  Province VARCHAR(50) NOT NULL,
+  City VARCHAR(50) NOT NULL,
+  Postal_Code VARCHAR(50) NOT NULL,
+  email VARCHAR ( 255 ) UNIQUE NOT NULL,
+  Deposit int ,
+  Balance int NOT NULL,
+  FOREIGN KEY (id)
+      REFERENCES LoginTable (id)
+);
+
+
+
+Drop TABLE  IF EXISTS Game_Account CASCADE;
+
+CREATE TABLE Game_Account (  
+    id INT NOT NULL,
+    Balance int not NULL,
+    withdraw int ,
+    FOREIGN KEY (id)
+      REFERENCES LoginTable (id)
+);
+
+
+
+
+
+
+    
+  
+
+
+
+
