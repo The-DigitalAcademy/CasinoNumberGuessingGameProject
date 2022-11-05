@@ -8,6 +8,7 @@ while balance > 0:
     if user_input == comp_num:
         balance += 1
         print("Congratulations, You have won!!!")
+        comp_num = random.randint(1, 10)
         
     elif user_input != comp_num:
         balance -= 1
