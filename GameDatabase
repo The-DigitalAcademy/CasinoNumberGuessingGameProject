@@ -22,6 +22,7 @@ CREATE TABLE User_Details(
 
 
 
+
 Drop TABLE  IF EXISTS Game_Account CASCADE;
 
 CREATE TABLE Game_Account (  
