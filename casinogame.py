@@ -9,6 +9,7 @@ while balance > 0:
         balance += 1
         print("Congratulations, You have won!!!")
         
+        
     elif user_input != comp_num:
         balance -= 1
         print("Oops, You have lost, try again!!!")
