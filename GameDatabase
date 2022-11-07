@@ -8,18 +8,17 @@ Drop TABLE if EXISTS User_Details CASCADE;
 
 CREATE TABLE User_Details(
   id INT NOT NULL,
-  FName VARCHAR(50) NOT NULL,
-  LName VARCHAR(50) NOT NULL,
-  Province VARCHAR(50) NOT NULL,
-  City VARCHAR(50) NOT NULL,
-  Postal_Code VARCHAR(50) NOT NULL,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  province VARCHAR(50) NOT NULL,
+  city VARCHAR(50) NOT NULL,
+  postal_code VARCHAR(50) NOT NULL,
   email VARCHAR ( 255 ) UNIQUE NOT NULL,
   Deposit int ,
   Balance int NOT NULL,
   FOREIGN KEY (id)
       REFERENCES LoginTable (id)
 );
-
 
 
 Drop TABLE  IF EXISTS Game_Account CASCADE;
