@@ -21,6 +21,11 @@ CREATE TABLE User_Details(
 );
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6508a30b4bb3f5057b2434ea93387057b7902aba
 Drop TABLE  IF EXISTS Game_Account CASCADE;
 
 CREATE TABLE Game_Account (  
