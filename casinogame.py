@@ -7,7 +7,7 @@ while balance > 0:
     user_input = int(input("Enter a number between 1 and 10: "))
     if user_input == comp_num:
         balance += 1
-        print("Congratulations, You have won!!!")
+        print("Congratulations, You have won. Your balance is now: ", balance)
         
         
     elif user_input != comp_num:
