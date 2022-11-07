@@ -43,6 +43,4 @@ while balance > 0:
         
 if balance == 0:
     print("Sorry, You have insufficient funds, Bye!")
-   deposit_amount = int(input("Enter a deposit amount"))
-        print("Your new balance is:",balance+deposit_amount)
->>>>>>> 9625aa0cb1c1bb10697703eea39a39acf16acc3e
+   
